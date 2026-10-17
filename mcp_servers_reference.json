@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent MCP Servers Configuration Reference",
+  "description": "Recommended MCP servers from ECC and official catalogs for deep reasoning, persistent memory, and GitHub operations.",
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "description": "Dynamic chain-of-thought step-by-step reasoning server for complex architectural and algorithmic tasks."
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Persistent memory across sessions to remember project patterns and user preferences."
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
+      },
+      "description": "Native GitHub operations for PRs, issues, commits, and branch management."
+    }
+  }
+}
