@@ -19,6 +19,7 @@ $results = [System.Collections.Generic.List[PSCustomObject]]::new()
 
 # 1. Search Core Curated Repositories
 $sources = @(
+    @{ Name = "learned-and-mounted"; Path = "$rootDir\.agents\skills"; Type = "Workspace & Learned Skills" },
     @{ Name = "superpowers"; Path = "$rootDir\superpowers\skills"; Type = "Methodology" },
     @{ Name = "agent-skills"; Path = "$rootDir\agent-skills\skills"; Type = "Vercel Engineering" },
     @{ Name = "skills"; Path = "$rootDir\skills\skills"; Type = "Anthropic Production" },
