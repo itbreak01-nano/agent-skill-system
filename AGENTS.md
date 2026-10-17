@@ -28,6 +28,17 @@ NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE
 2. **Green**: Write minimal implementation code to turn the test green.
 3. **Refactor**: Clean code and eliminate duplication while keeping tests passing.
 
+### The Iron Law of Autonomous Execution (Zero Trivial Interruptions)
+```
+NEVER ASK PERMISSION FOR OBVIOUS, SAFE, OR INTENDED ACTIONS
+```
+- If the user asks for a result (e.g., "git commit", "run tests", "fix the bug", "install dependencies"), execute the complete chain of prerequisite commands autonomously (`git add`, `git commit`, `git push`, build, test).
+- **NEVER** ask trivial questions like "Can I run git add?", "Should I edit this file?", or "Do you want me to proceed?".
+- Disturb the user **ONLY** for:
+  1. Destructive actions that permanently delete uncommitted code or production data.
+  2. Missing credentials/secrets that cannot be discovered locally.
+  3. Fundamental product architecture decisions with irreversible trade-offs.
+
 ---
 
 ## 2. Skill Discovery & Progressive Disclosure
