@@ -87,3 +87,7 @@ Official production skills from Anthropic:
 
 - **Composio Integrations (`awesome-claude-skills`)**: Over 864 connectors for GitHub, Slack, Jira, Gmail, Salesforce, Notion, Supabase, Vercel, and cloud infrastructure.
 - **AAS Core Catalog (`agentic-awesome-skills`)**: 2,705+ community skills indexed in `agentic-awesome-skills/data/catalog.json`.
+
+| **$cleanName** | .agents/skills/fastapi-async-db-guard | Prevents database connection leaks and pool exhaustion in high-concurrency FastAPI applications |
+
+| **$cleanName** | .agents/skills/powershell-profile-automation-and-cli-bypass | Rules and safeguards for programmatic Windows PowerShell profile modifications and string escaping |
